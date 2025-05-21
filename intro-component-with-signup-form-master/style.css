@@ -114,6 +114,7 @@ a {
   border: none;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  margin-top: 10px;
 }
 
 .form-wrapper button:hover {
@@ -151,6 +152,60 @@ input::placeholder {
   display: none;
 }
 
+.error-message {
+  color: red;
+  font-weight: 500;
+  font-size: 10px;
+  text-align: center;
+  margin-top: 12px;
+}
+
+.email-error-2 {
+  display: none;
+}
+
+.name-error-1 {
+  display: none;
+}
+
+.name-error-2 {
+  display: none;
+}
+
+.email-error {
+  display: none;
+  color: var(--red);
+}
+
+.password-error {
+  display: none;
+}
+
+.border-error {
+  border: 1px solid red;
+}
+
+.input-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.error-img {
+  position: absolute;
+  left: 90%;
+  bottom: 40%;
+  display: none;
+}
+
+.input-wrapper input {
+  width: 100%;
+  padding-right: 11rem;
+}
+
+.email-error-text {
+  color: var(--red);
+}
+
 @media screen and (min-width: 767px) {
   body {
     background-image: url("images/bg-intro-desktop.png");
@@ -174,34 +229,70 @@ input::placeholder {
     display: block;
     position: relative;
     text-align: center;
-    bottom: 5.5%;
+    bottom: 5.2%;
   }
 
   .trial-wrapper {
-    width: 32.0625rem; /* 513px */
-    border-radius: 0.625rem; /* 10px */
+    width: 32.0625rem;
+    border-radius: 0.625rem;
   }
 
   .container {
     display: flex;
     flex-direction: row;
-    gap: 21.875rem; /* 350px */
+    gap: 21.875rem;
   }
 
   .form-wrapper input {
-    margin-top: 0.9375rem; /* 15px */
+    margin-top: 0.9375rem;
   }
 
   .form-wrapper button {
-    margin-top: 0.9375rem; /* 15px */
+    margin-top: 0.9375rem;
   }
 
   h1 {
-    font-size: 3.125rem; /* 50px */
-    margin-right: 3.75rem; /* 60px */
+    font-size: 3.125rem;
+    margin-right: 3.75rem;
   }
 
   .columun-container {
-    margin-top: 6.25rem; /* 100px */
+    margin-top: 6.25rem;
+  }
+
+  .error-message {
+    color: var(--red);
+    font-weight: 500;
+    font-size: 10px;
+    float: inline-end;
+    margin-right: 12px;
+  }
+
+  .form-wrapper {
+    position: relative;
+    top: -4%;
+  }
+
+  .border-error {
+    border: 1px solid var(--red) !important;
+  }
+
+  .email-error-2 {
+    display: none;
+  }
+
+  .input-wrapper {
+    position: relative;
+    width: 100%;
+  }
+
+  .error-img {
+    position: absolute;
+    left: 90%;
+    bottom: 14%;
+  }
+
+  .input-wrapper input {
+    width: 450px;
   }
 }

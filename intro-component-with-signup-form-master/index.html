@@ -56,10 +56,33 @@
       </div>
       <div class="form-wrapper">
         <form>
-          <input type="text" placeholder="First Name" />
-          <input type="text" placeholder="Last Name" />
-          <input type="text" placeholder="Email Address" />
-          <input type="text" placeholder="Password" />
+         
+          <div class="input-wrapper">
+            <input type="text" placeholder="First Name" class="fName" />
+            <span class="error-message name-error-1">First Name cannot be empty</span>
+            <img src="images/icon-error.svg" alt="error-icon" class="error-img error-img1">
+          </div>
+          
+
+          <div class="input-wrapper">
+          <input type="text" placeholder="Last Name" class="lName"/>
+          <span class="error-message name-error-2">Last Name cannot be empty</span>
+          <img src="images/icon-error.svg" alt="error-icon" class="error-img error-img2">
+          </div>
+
+          <div class="input-wrapper">
+          <input type="text" placeholder="Email Address" class="email"/>
+          <span class="error-message email-error">Email cannot be empty</span>
+          <span class="error-message email-error-2">Looks like this is not an email</span>
+          <img src="images/icon-error.svg" alt="error-icon" class="error-img error-img3">
+        </div>
+
+         
+          <div class="input-wrapper">
+          <input type="text" placeholder="Password" class="password"/>
+          <span class="error-message password-error">Password cannot be empty</span>
+          <img src="images/icon-error.svg" alt="error-icon" class="error-img error-img4">
+        </div>
           <button type="submit">CLAIM YOUR FREE TRIAL</button>
         </form>
         <h6>
@@ -80,6 +103,6 @@
         >. Coded by <a href="#">Your Name Here</a>.
       </p>
     </footer> -->
-    <script src="main.js"></script>
+    <script src="../intro-component-with-signup-form-master/main.js"></script>
   </body>
 </html>
